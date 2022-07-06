@@ -10,8 +10,8 @@
         "format": "prettier --write '**/*.{js,json}'",
         "prebuild": "run-s clean tokens:transform",
         "build": "run-p build:light build:dark",
-        "build:light": "style-dictionary build --config ./src/sd.light.config.js",
-        "build:dark": "style-dictionary build --config ./src/sd.dark.config.js",
+        "build:light": "style-dictionary build --config ./src/config/sd.light.config.js",
+        "build:dark": "style-dictionary build --config ./src/config/sd.dark.config.js",
         "tokens:transform": "run-p transform:theme:light transform:theme:dark",
         "transform:theme:light": "token-transformer ./tokens.json generated/tokens/light.json base,semantic,comp,light",
         "transform:theme:dark": "token-transformer ./tokens.json generated/tokens/dark.json base,semantic,comp,dark"
