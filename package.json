@@ -13,8 +13,8 @@
         "build:light": "style-dictionary build --config ./src/sd.light.config.js",
         "build:dark": "style-dictionary build --config ./src/sd.dark.config.js",
         "tokens:transform": "run-p transform:theme:light transform:theme:dark",
-        "transform:theme:light": "token-transformer ./src/figma.tokens.json generated/tokens/light.json base,semantic,comp,light",
-        "transform:theme:dark": "token-transformer ./src/figma.tokens.json generated/tokens/dark.json base,semantic,comp,dark"
+        "transform:theme:light": "token-transformer ./tokens.json generated/tokens/light.json base,semantic,comp,light",
+        "transform:theme:dark": "token-transformer ./tokens.json generated/tokens/dark.json base,semantic,comp,dark"
     },
     "dependencies": {
         "token-transformer": "^0.0.23"
