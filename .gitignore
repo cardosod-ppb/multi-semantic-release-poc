@@ -1,0 +1,13 @@
+# Project dependencies
+node_modules/
+
+# Misc
+.DS_Store
+.vscode/
+
+# Debug
+npm-debug.log
+
+# Caches
+.cache/
+.eslintcache

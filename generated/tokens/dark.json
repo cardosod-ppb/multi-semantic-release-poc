@@ -1,0 +1,503 @@
+{
+  "semantic": {
+    "actions": {
+      "cta": {
+        "default": {
+          "background-color": {
+            "value": "#ba15bd",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "#FFFFFF",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "background-color": {
+            "value": "#008138",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "#FFFFFF",
+            "type": "color"
+          }
+        },
+        "active": {
+          "background-color": {
+            "value": "#00672c",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "#FFFFFF",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "bg": {
+      "elevation-1": {
+        "value": "#002721",
+        "type": "color"
+      },
+      "elevation-2": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "elevation-3": {
+        "value": "#F1F2F6",
+        "type": "color"
+      },
+      "elevation-4": {
+        "value": "#008138",
+        "type": "color"
+      },
+      "elevation-5": {
+        "value": "#006555",
+        "type": "color"
+      }
+    }
+  },
+  "background": {
+    "default": {
+      "value": "#002721",
+      "type": "color"
+    }
+  },
+  "button": {
+    "primary": {
+      "default": {
+        "background": {
+          "value": "#ba15bd",
+          "type": "color"
+        },
+        "text": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
+      },
+      "hover": {
+        "background": {
+          "value": "#008138",
+          "type": "color"
+        },
+        "text": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
+      },
+      "active": {
+        "background": {
+          "value": "#00672c",
+          "type": "color"
+        },
+        "text": {
+          "value": "#FFFFFF",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "colors": {
+    "green": {
+      "5": {
+        "value": "#d7f1da",
+        "type": "color",
+        "description": "new panache"
+      },
+      "10": {
+        "value": "#82D293",
+        "type": "color"
+      },
+      "20": {
+        "value": "#47b968",
+        "type": "color"
+      },
+      "30": {
+        "value": "#27aa56",
+        "type": "color",
+        "description": "."
+      },
+      "40": {
+        "value": "#009745",
+        "type": "color",
+        "description": "new pigment green"
+      },
+      "50": {
+        "value": "#008138",
+        "type": "color",
+        "description": "new jewel"
+      },
+      "60": {
+        "value": "#007331",
+        "type": "color"
+      },
+      "70": {
+        "value": "#00672c",
+        "type": "color"
+      },
+      "80": {
+        "value": "#015525",
+        "type": "color"
+      },
+      "90": {
+        "value": "#132517",
+        "type": "color"
+      }
+    },
+    "darkgreen": {
+      "5": {
+        "value": "#E2EBEA",
+        "type": "color"
+      },
+      "10": {
+        "value": "#A5C8BE",
+        "type": "color"
+      },
+      "20": {
+        "value": "#7BAEA0",
+        "type": "color"
+      },
+      "30": {
+        "value": "#65A091",
+        "type": "color"
+      },
+      "40": {
+        "value": "#4A8F7E",
+        "type": "color"
+      },
+      "50": {
+        "value": "#2B7C6B",
+        "type": "color"
+      },
+      "60": {
+        "value": "#136F5E",
+        "type": "color",
+        "description": "new casal"
+      },
+      "70": {
+        "value": "#006555",
+        "type": "color",
+        "description": "new dark green 2"
+      },
+      "80": {
+        "value": "#005344",
+        "type": "color",
+        "description": "new racing green"
+      },
+      "90": {
+        "value": "#002721",
+        "type": "color"
+      }
+    },
+    "info": {
+      "5": {
+        "value": "#E6EAF3",
+        "type": "color",
+        "description": "new info-light"
+      },
+      "10": {
+        "value": "#B5C1DD",
+        "type": "color"
+      },
+      "20": {
+        "value": "#90A4CC",
+        "type": "color"
+      },
+      "30": {
+        "value": "#7D95C3",
+        "type": "color"
+      },
+      "40": {
+        "value": "#6583B7",
+        "type": "color"
+      },
+      "50": {
+        "value": "#4970A9",
+        "type": "color"
+      },
+      "60": {
+        "value": "#3664A0",
+        "type": "color"
+      },
+      "70": {
+        "value": "#245A97",
+        "type": "color"
+      },
+      "80": {
+        "value": "#004A86",
+        "type": "color",
+        "description": "new info"
+      },
+      "90": {
+        "value": "#012242",
+        "type": "color"
+      }
+    },
+    "warning": {
+      "5": {
+        "value": "#FFE6CD",
+        "type": "color",
+        "description": "new warning-light"
+      },
+      "10": {
+        "value": "#FFB067",
+        "type": "color"
+      },
+      "20": {
+        "value": "#FF8016",
+        "type": "color"
+      },
+      "30": {
+        "value": "#F16E00",
+        "type": "color",
+        "description": "new orange"
+      },
+      "40": {
+        "value": "#D75F00",
+        "type": "color"
+      },
+      "50": {
+        "value": "#B85000",
+        "type": "color"
+      },
+      "60": {
+        "value": "#A54700",
+        "type": "color"
+      },
+      "70": {
+        "value": "#944000",
+        "type": "color"
+      },
+      "80": {
+        "value": "#793501",
+        "type": "color"
+      },
+      "90": {
+        "value": "#351B05",
+        "type": "color"
+      }
+    },
+    "danger": {
+      "5": {
+        "value": "#FEE4E1",
+        "type": "color",
+        "description": "new red-light"
+      },
+      "10": {
+        "value": "#F7AFA6",
+        "type": "color"
+      },
+      "20": {
+        "value": "#EB887E",
+        "type": "color"
+      },
+      "30": {
+        "value": "#E3746B",
+        "type": "color"
+      },
+      "40": {
+        "value": "#D65C54",
+        "type": "color"
+      },
+      "50": {
+        "value": "#C4423F",
+        "type": "color"
+      },
+      "60": {
+        "value": "#B53333",
+        "type": "color",
+        "description": "new red"
+      },
+      "70": {
+        "value": "#A62A2C",
+        "type": "color"
+      },
+      "80": {
+        "value": "#8C1F22",
+        "type": "color",
+        "description": "new stiletto"
+      },
+      "90": {
+        "value": "#3F1311",
+        "type": "color"
+      }
+    },
+    "pink": {
+      "5": {
+        "value": "#FFE3EC",
+        "type": "color"
+      },
+      "10": {
+        "value": "#FFA7C7",
+        "type": "color"
+      },
+      "20": {
+        "value": "#FF76A5",
+        "type": "color"
+      },
+      "30": {
+        "value": "#F66092",
+        "type": "color",
+        "description": "new pink"
+      },
+      "40": {
+        "value": "#DC5080",
+        "type": "color"
+      },
+      "50": {
+        "value": "#BD436D",
+        "type": "color"
+      },
+      "60": {
+        "value": "#A83C61",
+        "type": "color"
+      },
+      "70": {
+        "value": "#983657",
+        "type": "color"
+      },
+      "80": {
+        "value": "#7B2E47",
+        "type": "color"
+      },
+      "90": {
+        "value": "#351921",
+        "type": "color"
+      }
+    },
+    "yellow": {
+      "5": {
+        "value": "#FFFEF6",
+        "type": "color"
+      },
+      "10": {
+        "value": "#FFFF9D",
+        "type": "color"
+      },
+      "20": {
+        "value": "#FFF74A",
+        "type": "color"
+      },
+      "30": {
+        "value": "#FFEB1F",
+        "type": "color"
+      },
+      "40": {
+        "value": "#F8E000",
+        "type": "color",
+        "description": "brand yellow"
+      },
+      "50": {
+        "value": "#E9D300",
+        "type": "color"
+      },
+      "60": {
+        "value": "#E1CB00",
+        "type": "color"
+      },
+      "70": {
+        "value": "#A79600",
+        "type": "color"
+      },
+      "80": {
+        "value": "#7D7000",
+        "type": "color"
+      },
+      "90": {
+        "value": "#50470C",
+        "type": "color"
+      }
+    },
+    "sunflower": {
+      "5": {
+        "value": "#FFFEFB",
+        "type": "color"
+      },
+      "10": {
+        "value": "#FFF8E6",
+        "type": "color"
+      },
+      "20": {
+        "value": "#FFF2C7",
+        "type": "color"
+      },
+      "30": {
+        "value": "#FFE9A0",
+        "type": "color"
+      },
+      "40": {
+        "value": "#FFDC70",
+        "type": "color"
+      },
+      "50": {
+        "value": "#FFCB3C",
+        "type": "color"
+      },
+      "60": {
+        "value": "#FFBF20",
+        "type": "color",
+        "description": "new sunflower"
+      },
+      "70": {
+        "value": "#C48A00",
+        "type": "color"
+      },
+      "80": {
+        "value": "#936700",
+        "type": "color"
+      },
+      "90": {
+        "value": "#5E4209",
+        "type": "color"
+      }
+    },
+    "neutrals": {
+      "5": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "10": {
+        "value": "#F7F7F7",
+        "type": "color",
+        "description": "new solitude"
+      },
+      "20": {
+        "value": "#F1F2F6",
+        "type": "color",
+        "description": "new ghost white"
+      },
+      "30": {
+        "value": "#E8E9ED",
+        "type": "color",
+        "description": "new athens grey"
+      },
+      "40": {
+        "value": "#DDDEE2",
+        "type": "color"
+      },
+      "50": {
+        "value": "#D1D2D5",
+        "type": "color",
+        "description": "new wood ash"
+      },
+      "60": {
+        "value": "#C8C9CC",
+        "type": "color"
+      },
+      "70": {
+        "value": "#949597",
+        "type": "color"
+      },
+      "80": {
+        "value": "#6F6F71",
+        "type": "color",
+        "description": "new manatee"
+      },
+      "90": {
+        "value": "#464748",
+        "type": "color",
+        "description": "new gunpowder"
+      }
+    }
+  }
+}
