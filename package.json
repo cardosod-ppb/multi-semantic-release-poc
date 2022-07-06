@@ -17,6 +17,7 @@
         "transform:theme:dark": "token-transformer ./tokens.json generated/tokens/dark.json base,semantic,comp,dark"
     },
     "dependencies": {
+        "ejs": "^3.1.8",
         "token-transformer": "^0.0.23"
     },
     "devDependencies": {

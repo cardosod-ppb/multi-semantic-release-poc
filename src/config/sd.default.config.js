@@ -1,14 +1,12 @@
-const utils = require('./utils/text');
+const utils = require('../utils/text');
+const initExtendUIColorIOSSwift = require('../formatters/extend-ui-color-ios-swift');
+
+initExtendUIColorIOSSwift();
 
 const defaultConfig = theme => {
-    const formatedName = `${utils.capitalize(theme)}Theme`;
+    const formattedName = `${utils.capitalize(theme)}Theme`;
 
     return {
-        fileHeader: {
-            myFileHeader: defaultMessage => {
-                return ['hello, world!'];
-            },
-        },
         platforms: {
             scss: {
                 transformGroup: 'scss',
@@ -27,9 +25,6 @@ const defaultConfig = theme => {
                     {
                         format: 'css/variables',
                         destination: `${theme}-variables.css`,
-                        options: {
-                            fileHeader: `myFileHeader`,
-                        },
                     },
                 ],
             },
@@ -38,10 +33,9 @@ const defaultConfig = theme => {
                 buildPath: `generated/themes/${theme}/ios-swift/`,
                 files: [
                     {
-                        destination: `${formatedName}.swift`,
-                        format: 'ios-swift/enum.swift',
-                        className: `${formatedName}`,
-                        filter: {},
+                        destination: `${formattedName}.swift`,
+                        format: 'extendUIColorIOSSwift',
+                        className: `${formattedName}`,
                     },
                 ],
             },
