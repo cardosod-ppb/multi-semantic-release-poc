@@ -1,0 +1,147 @@
+{
+    "plugins": [
+        "prettier",
+        "@typescript-eslint",
+        "import"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript",
+        "plugin:prettier/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2021
+    },
+    "ignorePatterns": [
+        "dist/",
+        "target/",
+        "node_modules/"
+    ],
+    "settings": {
+        "import/ignore": [
+            "node_modules",
+            "\\.d\\.ts$",
+            "\\.(coffee|scss|css|less|hbs|svg|json)$"
+        ],
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": false
+            }
+        }
+    },
+    "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "ts": "never"
+            }
+        ],
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": [
+                    "typeLike"
+                ],
+                "format": [
+                    "PascalCase"
+                ]
+            },
+            {
+                "selector": "enum",
+                "format": [
+                    "UPPER_CASE"
+                ]
+            }
+        ],
+        "import/exports-last": "error",
+        "import/no-deprecated": "warn",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/__{mocks,tests}__/**/*.{js,ts}",
+                    "**/*.test.{js,ts}",
+                    "**/jest.setup.{js,ts}"
+                ]
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "import/order": [
+            "error",
+            {
+                "alphabetize": {
+                    "order": "asc"
+                },
+                "groups": [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index"
+                ],
+                "newlines-between": "always"
+            }
+        ],
+        "prettier/prettier": "error"
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts"
+            ],
+            "rules": {
+                "@typescript-eslint/explicit-function-return-type": [
+                    "warn",
+                    {
+                        "allowExpressions": true,
+                        "allowHigherOrderFunctions": true,
+                        "allowTypedFunctionExpressions": true
+                    }
+                ]
+            }
+        },
+        {
+            "files": [
+                "*d.ts"
+            ],
+            "rules": {
+                "max-classes-per-file": "off"
+            }
+        },
+        {
+            "files": [
+                "*.graphql"
+            ],
+            "extends": "plugin:@graphql-eslint/schema-recommended"
+        },
+        {
+            "files": [
+                "*.graphql"
+            ],
+            "parser": "@graphql-eslint/eslint-plugin",
+            "plugins": [
+                "@graphql-eslint"
+            ],
+            "rules": {
+                "prettier/prettier": "error"
+            }
+        }
+    ]
+}

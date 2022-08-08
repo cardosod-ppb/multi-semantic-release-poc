@@ -1,2 +1,3 @@
 # abacus-design-tokens
-Abacus Design Tokens respository
+
+Abacus Design Tokens repository

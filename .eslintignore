@@ -1,0 +1,18 @@
+# Project dependencies
+node_modules
+
+# Build
+dist
+target
+
+# Testing
+coverage
+reports
+
+# Misc
+.DS_Store
+.vscode
+
+# Caches
+.cache/
+.eslintcache
