@@ -1,0 +1,89 @@
+name: ci
+
+# Design tokens configuration data
+env:
+  tokens-file: tokens.json
+  modes: dark,light
+  sets: base,semantic,comp
+  platforms: "scss,css,ios-swift"
+  output: generated
+
+# TODO: DELETE THIS
+# Execute runner on a PR that will be merged into 'master' branch
+# and also on 'push' events to 'master' branch
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+# Execute runner when the tokens file is pushed to 'master' branch
+# on:
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - "${{env.tokens-file}}"
+
+jobs:
+  transform:
+    name: Transform
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Upload tokens artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: tokens
+          path: ${{env.tokens-file}}
+          if-no-files-found: error
+
+      - name: Transform tokens
+        id: transform
+        uses: Flutter-Global/design-tokens@master
+        with:
+          input: ${{env.tokens-file}}
+          modes: ${{env.modes}}
+          sets: ${{env.sets}}
+          platforms: ${{env.platforms}}
+          output: ${{env.output}}
+
+  commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: transform
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Download assets artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: assets
+          path: ${{env.output}}
+
+      - name: Display downloaded assets files
+        run: ls -R
+        working-directory: ${{env.output}}
+
+      - name: Automatic commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "ci(github-actions-bot) add generated assets"
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: [transform, commit]
+    steps:
+      # Retrieve all commits to look for the semver commit message using 'fetch-depth: "0"'
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: "0"
+
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
