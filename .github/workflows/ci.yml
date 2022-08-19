@@ -13,8 +13,12 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - ${{env.tokens-file}}
+    # Can't use the ${{env.tokens-file}} environment variable here, because they can only be used
+    # in a workflow step or an action.
+    # See: https://docs.github.com/en/enterprise-server@3.0/actions/learn-github-actions/environment-variables#about-environment-variables
+    # Another solution could be, to add a conditional on every job to check if the file has changed :(
+    paths:
+      - tokens.json
 
 jobs:
   transform:
