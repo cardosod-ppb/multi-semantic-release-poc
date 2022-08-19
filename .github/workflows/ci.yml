@@ -8,22 +8,13 @@ env:
   platforms: "scss,css,ios-swift"
   output: generated
 
-# TODO: DELETE THIS
-# Execute runner on a PR that will be merged into 'master' branch
-# and also on 'push' events to 'master' branch
+# Execute runner when the tokens file is pushed to 'master' branch
 on:
-  pull_request:
   push:
     branches:
-      - master
-
-# Execute runner when the tokens file is pushed to 'master' branch
-# on:
-#   push:
-#     branches:
-#       - master
-#     paths:
-#       - "${{env.tokens-file}}"
+      - main
+    # paths:
+    #   - ${{env.tokens-file}}
 
 jobs:
   transform:
@@ -71,7 +62,7 @@ jobs:
       - name: Automatic commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "ci(github-actions-bot) add generated assets"
+          commit_message: "ci(github-actions-bot): add generated assets"
 
   release:
     name: Release
