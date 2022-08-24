@@ -1,19 +1,11 @@
 :root {
-  --semantic-actions-cta-default-background-color: #6583b7;
-  --semantic-actions-cta-default-text-color: #fff;
-  --semantic-actions-cta-hover-background-color: #008138;
-  --semantic-actions-cta-hover-text-color: #fff;
-  --semantic-actions-cta-active-background-color: #00672c;
-  --semantic-actions-cta-active-text-color: #fff;
   --background-default: #fff;
-  --button-primary-default-background: #6583b7;
+  --button-primary-default-background: #009745;
   --button-primary-default-text: #fff;
   --button-primary-hover-background: #008138;
   --button-primary-hover-text: #fff;
   --button-primary-active-background: #00672c;
   --button-primary-active-text: #fff;
-  --checkbox-background: #6583b7;
-  --radio-background: #6583b7;
   --bg-light: #fff;
   --bg-medium: #f7f7f7;
   --bg-subtle: #d9eae0;
@@ -52,6 +44,12 @@
   --feedback-icon-error: #b53333;
   --feedback-icon-warning: #f16e00;
   --feedback-icon-info: #004a86;
+  --actions-cta-default-background-color: #009745;
+  --actions-cta-default-text-color: #fff;
+  --actions-cta-hover-background-color: #008138;
+  --actions-cta-hover-text-color: #fff;
+  --actions-cta-active-background-color: #00672c;
+  --actions-cta-active-text-color: #fff;
   --colors-brand-color-secondary: #004833;
   --colors-green-5: #d9eae0;
   --colors-green-10: #82d293;
