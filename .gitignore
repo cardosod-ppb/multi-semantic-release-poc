@@ -1,13 +1,24 @@
-# Project dependencies
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files
+
+# Dependencies
 node_modules/
 
 # Misc
 .DS_Store
-.vscode/
 
-# Debug
-npm-debug.log
+# Tests
+coverage
+
+# Logs
+*.log
 
 # Caches
 .cache/
 .eslintcache
+
+# VSCode
+.vscode/
+.history/
+
+# dotenv
+.env*
