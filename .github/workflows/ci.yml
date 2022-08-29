@@ -74,15 +74,15 @@ jobs:
         with:
           ref: ${{ needs.commit.outputs.commit-sha }}
 
-      - name: Prepare release
+      - name: Prepare release suffix
         id: release
         run: |
           echo "${{ github.event_name }}"
-          SUFFIX=$([ "${{ github.event_name }}" == push ] && echo "" || echo "beta")
-          echo "$SUFFIX"
-          echo "::set-output name=release-suffix::$(echo $SUFFIX)"
+          echo "::set-output name=suffix::$(echo $([ "${{ github.event_name }}" == push ] && echo "" || echo "beta"))"
+          echo "${{ steps.release.outputs.suffix }}"
 
-      # - name: Bump version and push tag
-      #   uses: anothrNick/github-tag-action@1.36.0
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PRERELEASE_SUFFIX: ${{ steps.release.outputs.suffix }}
