@@ -68,8 +68,6 @@ jobs:
     steps:
       # Retrieve all commits to look for the semver commit message using 'fetch-depth: "0"'
       - uses: actions/checkout@v3
-        # with:
-        #   ref: ${{ needs.commit.outputs.commit-sha }}
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
