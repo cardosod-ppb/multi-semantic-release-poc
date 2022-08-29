@@ -4,8 +4,6 @@ name: release
 on:
   pull_request:
   push:
-    branches:
-      - main
     paths:
       - "**.css"
       - "**.scss"
@@ -16,7 +14,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
