@@ -6,7 +6,7 @@ env:
   platforms: "scss,css,ios-swift"
   output: generated
 
-# Execute runner when the tokens file is pushed to 'master' branch or on a pull request event
+# Execute runner when the tokens file is pushed to 'main' branch or on a 'pull_request' event
 on:
   pull_request:
   push:
@@ -69,17 +69,15 @@ jobs:
     runs-on: ubuntu-latest
     needs: [transform, commit]
     steps:
-      # Retrieve all commits to look for the semver commit message using 'fetch-depth: "0"'
       - uses: actions/checkout@v3
         with:
           ref: ${{ needs.commit.outputs.commit-sha }}
 
+      # Check wether the event was a 'push' or a 'pull_request' to properly set the tag suffix,
+      # since we've checked out the last commit, which includes the generated assets
       - name: Prepare release suffix
         id: release
-        run: |
-          echo "${{ github.event_name }}"
-          echo "::set-output name=suffix::$(echo $([ "${{ github.event_name }}" == push ] && echo "" || echo "beta"))"
-          echo "${{ steps.release.outputs.suffix }}"
+        run: echo "::set-output name=suffix::$(echo $([ "${{ github.event_name }}" == push ] && echo "" || echo "beta"))"
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
