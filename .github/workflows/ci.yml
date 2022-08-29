@@ -69,18 +69,22 @@ jobs:
     runs-on: ubuntu-latest
     needs: [transform, commit]
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout branch
+        uses: actions/checkout@v3
         with:
           ref: ${{ needs.commit.outputs.commit-sha }}
 
       # Check wether the event was a 'push' or a 'pull_request' to properly set the tag suffix,
       # since we've checked out the last commit, which includes the generated assets
-      - name: Prepare release suffix
-        id: release
-        run: echo "::set-output name=suffix::$(echo $([ "${{ github.event_name }}" == push ] && echo "" || echo "beta"))"
+      # - name: Prepare release suffix
+      #   id: release
+      #   run: |
+      #     SUFFIX=_
+      #     echo "::set-output name=suffix::$SUFFIX"
+      #     echo "${{ steps.release.outputs.suffix }}"
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PRERELEASE_SUFFIX: ${{ steps.release.outputs.suffix }}
+          RELEASE_BRANCHES: main,master,${{ env.GITHUB_SHA}},${{env.GITHUB_REF}}
