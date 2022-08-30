@@ -53,7 +53,7 @@ extension UIColor {
         public static let actionsCtaHoverTextColor = UIColor(hexString: "#fff")
         public static let actionsCtaActiveBackgroundColor = UIColor(hexString: "#00672c")
         public static let actionsCtaActiveTextColor = UIColor(hexString: "#fff")
-        public static let colorsBrandColorSecondary = UIColor(hexString: "#aao")
+        public static let colorsBrandColorSecondary = UIColor(hexString: "#aaz")
         public static let colorsGreen5 = UIColor(hexString: "#d9eae0")
         public static let colorsGreen10 = UIColor(hexString: "#82d293")
         public static let colorsGreen20 = UIColor(hexString: "#47b968")
