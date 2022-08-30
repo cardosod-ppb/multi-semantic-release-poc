@@ -15,11 +15,12 @@ on:
     # Can't use the ${{env.tokens-file}} environment variable here, because they can only be used
     # in a workflow step or an action.
     # See: https://docs.github.com/en/enterprise-server@3.0/actions/learn-github-actions/environment-variables#about-environment-variables
-    # Another solution could be, to add a conditional on every job to check if the file has changed :(
+    # Another solution could be, to add a conditional on every job to check if the file has changed
     paths:
       - tokens.json
 
 jobs:
+  # Generate the assets
   transform:
     name: Transform
     runs-on: ubuntu-latest
@@ -35,6 +36,7 @@ jobs:
           platforms: ${{env.platforms}}
           output: ${{env.output}}
 
+  # Commit and push the generated assets to the branch
   commit:
     name: Commit
     runs-on: ubuntu-latest
@@ -51,7 +53,7 @@ jobs:
           name: assets
           path: ${{env.output}}
 
-      - name: Display downloaded assets files
+      - name: Display downloaded assets
         run: ls -R
         working-directory: ${{env.output}}
 
@@ -64,6 +66,7 @@ jobs:
         with:
           commit_message: "ci(github-actions-bot): add generated assets"
 
+  # Create a tag which includes the committed assets
   release:
     name: Release
     runs-on: ubuntu-latest
