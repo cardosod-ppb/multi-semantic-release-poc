@@ -74,17 +74,17 @@ jobs:
         with:
           ref: ${{ needs.commit.outputs.commit-sha }}
 
-      # Check wether the event was a 'push' or a 'pull_request' to properly set the tag suffix,
+      # Check wether the event was a 'push' or a 'pull_request' to properly set as a RELEASE_BRANCHES or not,
       # since we've checked out the last commit, which includes the generated assets
-      # - name: Prepare release suffix
-      #   id: release
-      #   run: |
-      #     SUFFIX=_
-      #     echo "::set-output name=suffix::$SUFFIX"
-      #     echo "${{ steps.release.outputs.suffix }}"
+      - name: Prepare RELEASE_BRANCHES
+        id: release_branches
+        run: |
+          BRANCHES=$([ "${{github.event_name}}" == push ] && echo "main,master,${{ env.GITHUB_SHA}},${{env.GITHUB_REF}}" || echo "main,master")
+          echo "::set-output name=branches::$BRANCHES"
+          echo "---> ${{ steps.release_branches.outputs.branches }}"
 
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_BRANCHES: main,master,${{ env.GITHUB_SHA}},${{env.GITHUB_REF}}
+          RELEASE_BRANCHES: ${{ steps.release_branches.outputs.branches }}
