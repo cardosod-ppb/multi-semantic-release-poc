@@ -74,6 +74,7 @@ extension UIColor {
         public static let iconHighlight = UIColor(hexString: "#005344")
         public static let iconDisable = UIColor(hexString: "#949597")
         public static let iconOnDark = UIColor(hexString: "#fff")
+        public static let iconDark = UIColor(hexString: "#474752")
         public static let borderLightDefault = UIColor(hexString: "#e8e9ed")
         public static let borderLightHover = UIColor(hexString: "#d9eae0")
         public static let borderLightActive = UIColor(hexString: "#009745")
