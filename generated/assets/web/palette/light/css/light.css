@@ -77,6 +77,16 @@
   --avatar-quartenary-bg-color: #d9eae0;
   --avatar-quartenary-icon-color: #005344;
   --avatar-quartenary-text-color: #6f6f71;
+  --badge-primary-bg-color: #fce300;
+  --badge-primary-text-color: #474752;
+  --badge-secondary-bg-color: #d9eae0;
+  --badge-secondary-text-color: #005344;
+  --badge-tertiary-bg-color: #009745;
+  --badge-tertiary-text-color: #fff;
+  --badge-tertiary-icon-color: #fff;
+  --badge-quartenery-bg-color: #fff;
+  --badge-quartenery-text-color: #009745;
+  --badge-quartenery-icon-color: #009745;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
   --text-secondary-dark: #6f6f71;
