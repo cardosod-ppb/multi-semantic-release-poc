@@ -111,6 +111,7 @@ extension UIColor {
         public static let borderMediumActive = UIColor(hexString: "#007331")
         public static let borderDarkDefault = UIColor(hexString: "#6f6f71")
         public static let borderDarkActive = UIColor(hexString: "#009745")
+        public static let borderHighlightDefault = UIColor(hexString: "#006858")
         public static let feedbackBgSuccess = UIColor(hexString: "#d9eae0")
         public static let feedbackBgError = UIColor(hexString: "#fee4e1")
         public static let feedbackBgWarning = UIColor(hexString: "#ffe6cd")
