@@ -123,6 +123,12 @@
   --filter-default-text-color: #474752;
   --filter-active-border-color: #009745;
   --filter-active-text-color: #009745;
+  --leg-info-win-text-primary-color: #474752;
+  --leg-info-win-text-secondary-color: #6f6f71;
+  --leg-info-lost-text-primary-color: #474752;
+  --leg-info-lost-text-secondary-color: #6f6f71;
+  --leg-info-silk-text-primary-color: #474752;
+  --leg-info-silk-text-secondary-color: #6f6f71;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
   --text-secondary-dark: #6f6f71;
