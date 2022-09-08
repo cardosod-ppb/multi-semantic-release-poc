@@ -74,7 +74,7 @@ extension UIColor {
         public static let avatarSecondaryIconColor = UIColor(hexString: "#fff")
         public static let avatarSecondaryTextColor = UIColor(hexString: "#6f6f71")
         public static let avatarTertiaryBgColor = UIColor(hexString: "#fff")
-        public static let avatarTertiaryBorderColor = UIColor(hexString: "#c20bb7")
+        public static let avatarTertiaryBorderColor = UIColor(hexString: "#006858")
         public static let avatarTertiaryIconColor = UIColor(hexString: "#005344")
         public static let avatarTertiaryTextColor = UIColor(hexString: "#6f6f71")
         public static let avatarQuartenaryBgColor = UIColor(hexString: "#d9eae0")
