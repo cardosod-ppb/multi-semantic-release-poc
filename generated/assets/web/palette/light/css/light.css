@@ -265,6 +265,17 @@
   --tab-secondary-active-border-color: #009745;
   --tab-secondary-focus-text-color: #6f6f71;
   --tab-secondary-focus-border-color: #e8e9ed;
+  --card-header-event-text-primary-color: #474752;
+  --card-header-event-text-secondary-color: #6f6f71;
+  --card-header-bet-label-text-primary-color: #474752;
+  --card-header-bet-label-text-secondary-color: #6f6f71;
+  --card-header-bet-label-text-tertiary-color: #949597;
+  --card-header-bet-icon-label-text-primary-color: #474752;
+  --card-header-bet-icon-label-text-secondary-color: #6f6f71;
+  --card-header-bet-icon-label-text-tertiary-color: #949597;
+  --card-header-avb-text-primary-color: #474752;
+  --card-header-avb-text-secondary-color: #6f6f71;
+  --card-header-social-text-color: #474752;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
   --text-secondary-dark: #6f6f71;
