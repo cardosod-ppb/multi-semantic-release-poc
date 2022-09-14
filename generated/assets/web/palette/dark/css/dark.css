@@ -292,6 +292,12 @@
   --sub-header-primary-text-primary-color: #474752;
   --sub-header-primary-text-secondary-color: #6f6f71;
   --sub-header-secondary-text-color: #6f6f71;
+  --blurb-primary-text-primary-color: #6f6f71;
+  --blurb-primary-text-secondary-color: #009745;
+  --blurb-secondary-bg-color: #c81176;
+  --blurb-secondary-text-primary-color: #6f6f71;
+  --blurb-secondary-text-secondary-color: #009745;
+  --blurb-secondary-icon-color: #009745;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
   --text-secondary-dark: #6f6f71;
