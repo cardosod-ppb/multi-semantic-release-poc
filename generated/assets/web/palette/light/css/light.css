@@ -284,6 +284,11 @@
   --promo-text-icon-text-primary-color: #474752;
   --promo-text-icon-text-secondary-color: #6f6f71;
   --promo-text-icon-text-tertiary-color: #009745;
+  --toast-default-text-primary-color: #474752;
+  --toast-default-text-secondary-color: #f1f2f6;
+  --toast-default-border-color: #cc149c;
+  --toast-progress-text-color: #474752;
+  --toast-progress-border-color: #b81182;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
   --text-secondary-dark: #6f6f71;
