@@ -37,7 +37,7 @@
 }
 .typography-default-label-l {
     font-family: Roboto;
-    font-size: 12;
+    font-size: 12px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -46,7 +46,7 @@
 }
 .typography-default-label-l-bold {
     font-family: Roboto;
-    font-size: 12;
+    font-size: 12px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -55,7 +55,7 @@
 }
 .typography-default-body-s {
     font-family: Roboto;
-    font-size: 14;
+    font-size: 14px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -64,7 +64,7 @@
 }
 .typography-default-body-s-link {
     font-family: Roboto;
-    font-size: 14;
+    font-size: 14px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -73,7 +73,7 @@
 }
 .typography-default-body-s-bold {
     font-family: Roboto;
-    font-size: 14;
+    font-size: 14px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -82,7 +82,7 @@
 }
 .typography-default-body-m {
     font-family: Roboto;
-    font-size: 16;
+    font-size: 16px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -91,7 +91,7 @@
 }
 .typography-default-body-m-bold {
     font-family: Roboto;
-    font-size: 16;
+    font-size: 16px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -100,7 +100,7 @@
 }
 .typography-default-heading-s {
     font-family: Roboto;
-    font-size: 16;
+    font-size: 16px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -109,7 +109,7 @@
 }
 .typography-default-heading-s-bold {
     font-family: Roboto;
-    font-size: 16;
+    font-size: 16px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -118,7 +118,7 @@
 }
 .typography-default-heading-m {
     font-family: Roboto;
-    font-size: 18;
+    font-size: 18px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -127,7 +127,7 @@
 }
 .typography-default-heading-m-bold {
     font-family: Roboto;
-    font-size: 18;
+    font-size: 18px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -136,7 +136,7 @@
 }
 .typography-default-heading-l {
     font-family: Roboto;
-    font-size: 22;
+    font-size: 22px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -145,7 +145,7 @@
 }
 .typography-default-heading-l-bold {
     font-family: Roboto;
-    font-size: 22;
+    font-size: 22px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -154,7 +154,7 @@
 }
 .typography-brand-body-l {
     font-family: Paddy Mischief;
-    font-size: 14;
+    font-size: 14px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -163,7 +163,7 @@
 }
 .typography-brand-body-m {
     font-family: Paddy Mischief;
-    font-size: 12;
+    font-size: 12px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -181,7 +181,7 @@
 }
 .typography-brand-heading-l {
     font-family: Paddy Mischief;
-    font-size: 22;
+    font-size: 22px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -190,7 +190,7 @@
 }
 .typography-brand-heading-m {
     font-family: Paddy Mischief;
-    font-size: 20;
+    font-size: 20px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -199,7 +199,7 @@
 }
 .typography-brand-heading-s {
     font-family: Paddy Mischief;
-    font-size: 16;
+    font-size: 16px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -208,7 +208,7 @@
 }
 .typography-brand-display-xl {
     font-family: Paddy Mischief;
-    font-size: 40;
+    font-size: 40px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -217,7 +217,7 @@
 }
 .typography-brand-display-l {
     font-family: Paddy Mischief;
-    font-size: 32;
+    font-size: 32px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -226,7 +226,7 @@
 }
 .typography-brand-display-m {
     font-family: Paddy Mischief;
-    font-size: 28;
+    font-size: 28px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
@@ -235,7 +235,7 @@
 }
 .typography-brand-display-s {
     font-family: Paddy Mischief;
-    font-size: 24;
+    font-size: 24px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
