@@ -1,7 +1,7 @@
 
 .typography-default-label-s {
     font-family: Roboto;
-    font-size: 8;
+    font-size: 8px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -10,7 +10,7 @@
 }
 .typography-default-label-s-bold {
     font-family: Roboto;
-    font-size: 8;
+    font-size: 8px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -19,7 +19,7 @@
 }
 .typography-default-label-m {
     font-family: Roboto;
-    font-size: 11;
+    font-size: 11px;
     font-weight: Regular;
     line-height: 150%;
     letter-spacing: 0%;
@@ -28,7 +28,7 @@
 }
 .typography-default-label-m-bold {
     font-family: Roboto;
-    font-size: 11;
+    font-size: 11px;
     font-weight: Bold;
     line-height: 150%;
     letter-spacing: 0%;
@@ -172,7 +172,7 @@
 }
 .typography-brand-body-s {
     font-family: Paddy Mischief;
-    font-size: 10;
+    font-size: 10px;
     font-weight: Bold;
     line-height: 130%;
     letter-spacing: 0%;
