@@ -281,6 +281,7 @@ extension UIColor {
         public static let cardHeaderSocialTextColor = UIColor(hexString: "#474752")
         public static let promoImgTextPrimaryColor = UIColor(hexString: "#fff")
         public static let promoImgTextSecondaryColor = UIColor(hexString: "#fff")
+        public static let promoImgTextPromoColor = UIColor(hexString: "#fce300")
         public static let promoTextTextPrimaryColor = UIColor(hexString: "#005344")
         public static let promoTextTextSecondaryColor = UIColor(hexString: "#6f6f71")
         public static let promoTextTertiaryColor = UIColor(hexString: "#009745")
