@@ -127,6 +127,8 @@ extension UIColor {
         public static let badgeQuarteneryTextColor = UIColor(hexString: "#009745")
         public static let badgeQuarteneryIconColor = UIColor(hexString: "#009745")
         public static let cardBgColor = UIColor(hexString: "#fff")
+        public static let cardTextPrimaryColor = UIColor(hexString: "#474752")
+        public static let cardTextSecondaryColor = UIColor(hexString: "#6f6f71")
         public static let dialogTextPrimaryColor = UIColor(hexString: "#005344")
         public static let dialogTextSecondaryColor = UIColor(hexString: "#6f6f71")
         public static let dropdownDefaultBgColor = UIColor(hexString: "#f1f2f6")
