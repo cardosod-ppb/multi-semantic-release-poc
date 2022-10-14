@@ -324,6 +324,7 @@ extension UIColor {
         public static let rowLabelTextPrimaryColor = UIColor(hexString: "#474752")
         public static let rowTipsTextPrimaryColor = UIColor(hexString: "#474752")
         public static let rowTipsTextSecondaryColor = UIColor(hexString: "#6f6f71")
+        public static let dividerBgColor = UIColor(hexString: "#f1f2f6")
         public static let bgLight = UIColor(hexString: "#fff")
         public static let bgMedium = UIColor(hexString: "#f1f2f6")
         public static let bgSubtle = UIColor(hexString: "#d9eae0")
