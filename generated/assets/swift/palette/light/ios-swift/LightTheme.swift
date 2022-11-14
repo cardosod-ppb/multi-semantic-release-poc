@@ -319,6 +319,8 @@ extension UIColor {
         public static let listMenuItemIconSecondaryColor = UIColor(hexString: "#005344")
         public static let listIndicatorBorderColor = UIColor(hexString: "#f1f2f6")
         public static let listIndicatorBgColor = UIColor(hexString: "#6f6f71")
+        public static let listTwolabelsTextPrimaryColor = UIColor(hexString: "#474752")
+        public static let listTwolabelsTextSecondaryColor = UIColor(hexString: "#6f6f71")
         public static let rowPreplayTextColor = UIColor(hexString: "#474752")
         public static let rowInplayTextColor = UIColor(hexString: "#474752")
         public static let rowOutrightTextPrimaryColor = UIColor(hexString: "#474752")
