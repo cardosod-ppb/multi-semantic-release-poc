@@ -1,11 +1,10 @@
 
 @mixin box-shadow-100 {
-    box-shadow: 0px 2px 8px 0px #00000029;
+    box-shadow: 1px 2px 8px 0px #00000029;
 }
 @mixin box-shadow-300 {
     box-shadow: 0px 0px 24px 0px #0000001a;
 }
 @mixin box-shadow-400 {
-    box-shadow: 0px 0px 3px 1px #0000000d;
+    box-shadow: inset 0px 0px 3px 1px #0000000d;
 }
-
