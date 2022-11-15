@@ -303,7 +303,6 @@ extension UIColor {
         public static let subHeaderPrimarySignifierBgColor = UIColor(hexString: "#6f6f71")
         public static let subHeaderSecondaryTextColor = UIColor(hexString: "#6f6f71")
         public static let subHeaderSecondarySignifierBgColor = UIColor(hexString: "#e8e9ed")
-        public static let subHeaderTertiaryTextColor = UIColor(hexString: "#6f6f71")
         public static let blurbPrimaryTextPrimaryColor = UIColor(hexString: "#6f6f71")
         public static let blurbPrimaryTextSecondaryColor = UIColor(hexString: "#009745")
         public static let blurbSecondaryBgColor = UIColor(hexString: "#f7f7f7")
