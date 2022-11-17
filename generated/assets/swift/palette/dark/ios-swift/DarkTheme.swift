@@ -53,7 +53,7 @@ extension UIColor {
         public static let buttonHighlightedActiveBgColor = UIColor(hexString: "#fce300")
         public static let buttonHighlightedActiveTextColor = UIColor(hexString: "#474752")
         public static let buttonHighlightedLockBgColor = UIColor(hexString: "#f1f2f6")
-        public static let buttonHighlightedLockIconColor = UIColor(hexString: "#474752")
+        public static let buttonHighlightedIconColor = UIColor(hexString: "#474752")
         public static let buttonHighlightedDisableBgColor = UIColor(hexString: "#f1f2f6")
         public static let buttonHighlightedDisableTextPrimaryColor = UIColor(hexString: "#949597")
         public static let buttonNegativeDefaultBgColor = UIColor(hexString: "#b53333")
