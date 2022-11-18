@@ -303,8 +303,9 @@
   --toast-progress-border-color: #f1f2f6;
   --sub-header-primary-text-primary-color: #474752;
   --sub-header-primary-text-secondary-color: #6f6f71;
+  --sub-header-primary-signifier-bg-color: #6f6f71;
   --sub-header-secondary-text-color: #6f6f71;
-  --sub-header-tertiary-text-color: #6f6f71;
+  --sub-header-secondary-signifier-bg-color: #e8e9ed;
   --blurb-primary-text-primary-color: #6f6f71;
   --blurb-primary-text-secondary-color: #009745;
   --blurb-secondary-bg-color: #f7f7f7;
