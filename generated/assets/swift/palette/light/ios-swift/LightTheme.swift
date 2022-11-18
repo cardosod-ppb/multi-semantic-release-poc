@@ -42,7 +42,7 @@ extension UIColor {
         public static let buttonTertiaryDisableBorderColor = UIColor(hexString: "#f1f2f6")
         public static let buttonTertiaryDisableTextPrimaryColor = UIColor(hexString: "#949597")
         public static let buttonTertiaryDisableTextSecondaryColor = UIColor(hexString: "#949597")
-        public static let buttonTertiaryDisableIconColor = UIColor(hexString: "#474752")
+        public static let buttonTertiaryIconColor = UIColor(hexString: "#474752")
         public static let buttonTertiaryActivePromoBgColor = UIColor(hexString: "#fce300")
         public static let buttonTertiaryActivePromoTextColor = UIColor(hexString: "#474752")
         public static let buttonRoundDefaultBgColor = UIColor(hexString: "#f1f2f6")
