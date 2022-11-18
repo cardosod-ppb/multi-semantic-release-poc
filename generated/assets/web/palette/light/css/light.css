@@ -61,10 +61,15 @@
   --button-highlighted-hover-text-primary-color: #008138;
   --button-highlighted-active-bg-color: #fce300;
   --button-highlighted-active-text-color: #474752;
-  --button-highlighted-lock-bg-color: #f1f2f6;
-  --button-highlighted-lock-icon-color: #474752;
+  --button-highlighted-icon-color: #474752;
   --button-highlighted-disable-bg-color: #f1f2f6;
   --button-highlighted-disable-text-primary-color: #949597;
+  --button-negative-default-bg-color: #b53333;
+  --button-negative-default-icon-color: #fff;
+  --button-negative-hover-bg-color: #a62a2c;
+  --button-negative-hover-icon-color: #fff;
+  --button-negative-active-bg-color: #8c1f22;
+  --button-negative-active-icon-color: #fff;
   --accordion-primary-close-default-bg-color: #fff;
   --accordion-primary-close-default-text-color: #474752;
   --accordion-primary-close-default-icon-color: #474752;
