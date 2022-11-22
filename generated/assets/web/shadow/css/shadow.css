@@ -1,6 +1,15 @@
 
+.box-shadow-25 {
+    box-shadow: 0px -4px 4px 0px #9394964d;
+}
+.box-shadow-50 {
+    box-shadow: 0px 0px 12px 0px #00000033;
+}
 .box-shadow-100 {
-    box-shadow: 0px 2px 8px 0px #00000099;
+    box-shadow: 0px 2px 8px 0px #00000029;
+}
+.box-shadow-200 {
+    box-shadow: 0px 0px 4px 0px #0000001a;
 }
 .box-shadow-300 {
     box-shadow: 0px 0px 24px 0px #0000001a;
