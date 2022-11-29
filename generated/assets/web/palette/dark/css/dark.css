@@ -9,7 +9,7 @@
   --button-primary-disable-bg-color: #f1f2f6;
   --button-primary-disable-text-color: #949597;
   --button-primary-loading-bg-color: #d9eae0;
-  --button-primary-loading-icon-color: #005344;
+  --button-primary-loading-icon-color: #006858;
   --button-secondary-default-bg-color: #fff;
   --button-secondary-default-border-color: #009745;
   --button-secondary-default-text-color: #009745;
@@ -22,7 +22,7 @@
   --button-secondary-disable-bg-color: #f1f2f6;
   --button-secondary-disable-text-color: #949597;
   --button-secondary-loading-bg-color: #d9eae0;
-  --button-secondary-loading-icon-color: #005344;
+  --button-secondary-loading-icon-color: #006858;
   --button-tertiary-default-bg-color: #f1f2f6;
   --button-tertiary-default-border-color: #e8e9ed;
   --button-tertiary-default-text-primary-color: #009745;
@@ -128,7 +128,7 @@
   --avatar-secondary-text-color: #6f6f71;
   --avatar-tertiary-bg-color: #fff;
   --avatar-tertiary-border-color: #006858;
-  --avatar-tertiary-icon-color: #005344;
+  --avatar-tertiary-icon-color: #006858;
   --avatar-tertiary-text-color: #6f6f71;
   --avatar-quartenary-bg-color: #fff;
   --avatar-quartenary-icon-color: #009745;
@@ -324,7 +324,7 @@
   --list-twolabels-text-secondary-color: #6f6f71;
   --listitem-text-color: #474752;
   --listitem-icon-primary-color: #474752;
-  --listitem-icon-secondary-color: #005344;
+  --listitem-icon-secondary-color: #006858;
   --row-preplay-text-color: #474752;
   --row-inplay-text-color: #474752;
   --row-outright-text-primary-color: #474752;
@@ -383,7 +383,7 @@
   --text-highlight-default: #005344;
   --text-promo-default: #fce300;
   --icon-action: #009745;
-  --icon-highlight: #005344;
+  --icon-highlight: #006858;
   --icon-disable: #949597;
   --icon-on-dark: #fff;
   --icon-dark: #474752;
