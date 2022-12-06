@@ -208,6 +208,7 @@ extension UIColor {
         public static let feedbackBgError = UIColor(hexString: "#fee4e1")
         public static let feedbackBgWarning = UIColor(hexString: "#ffe6cd")
         public static let feedbackBgInfo = UIColor(hexString: "#e6eaf3")
+        public static let feedbackBgWarningDark = UIColor(hexString: "#f16e00")
         public static let feedbackIconSuccess = UIColor(hexString: "#009745")
         public static let feedbackIconError = UIColor(hexString: "#b53333")
         public static let feedbackIconWarning = UIColor(hexString: "#f16e00")
