@@ -233,10 +233,8 @@
   --text-field-disable-border-color: #e8e9ed;
   --text-field-disable-text-color: #949597;
   --text-field-disable-icon-color: #949597;
-  --slider-bg-color: #fff;
-  --slider-border-color: #e8e9ed;
-  --slider-track-active-color: #009745;
-  --slider-track-inactive-color: #f1f2f6;
+  --slider-primary-active-track-color: #009745;
+  --slider-primary-inactive-track-color: #e8e9ed;
   --slider-handle-color: #009745;
   --slider-tickmark-color: #474752;
   --slider-text-color: #474752;
