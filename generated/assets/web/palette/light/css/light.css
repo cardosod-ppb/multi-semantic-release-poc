@@ -361,14 +361,15 @@
   --arrow-disable-bg-color: #ffffff0d;
   --arrow-disable-icon-color: #ffffff33;
   --bg-light: #fff;
+  --bg-neutral: #f7f7f7;
   --bg-medium: #f1f2f6;
+  --bg-muted: #e8e9ed;
   --bg-subtle: #d9eae0;
   --bg-brand: #009745;
   --bg-medium-dark: #006858;
   --bg-dark: #005344;
   --bg-darker: #002721;
   --bg-promo: #fce300;
-  --bg-neutral: #f7f7f7;
   --bg-brand-dark: #004833;
   --text-primary-dark: #474752;
   --text-primary-light: #fff;
