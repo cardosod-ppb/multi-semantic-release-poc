@@ -1,0 +1,23 @@
+{
+  "name": "@pp/abacus-design-tokens",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "multi-semantic-release": "^3.0.1"
+  },
+  "scripts": {
+    "release": "multi-semantic-release"
+  },
+  "workspaces": [
+    "generated/assets/*"
+  ],
+  "release": {
+    "branches": [
+      "master",
+      "main"
+    ]
+  }
+}
