@@ -210,6 +210,14 @@
   --feedback-icon-error: #b53333;
   --feedback-icon-warning: #f16e00;
   --feedback-icon-info: #004a86;
+  --feedback-text-success: #009745;
+  --feedback-text-error: #b53333;
+  --feedback-text-warning: #f16e00;
+  --feedback-text-info: #004a86;
+  --feedback-border-success: #009745;
+  --feedback-border-error: #b53333;
+  --feedback-border-warning: #f16e00;
+  --feedback-border-info: #004a86;
   --text-field-default-bg-color: #f1f2f6;
   --text-field-default-text-color: #6f6f71;
   --text-field-default-icon-color: #474752;
