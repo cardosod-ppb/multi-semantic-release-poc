@@ -12,7 +12,7 @@
     "release": "multi-semantic-release"
   },
   "workspaces": [
-    "generated/assets/*"
+    "generated/*"
   ],
   "release": {
     "branches": [
