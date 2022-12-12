@@ -1,92 +1,31 @@
 name: ci
 
-# Design tokens configuration data
-env:
-  tokens-file: tokens.json
-  platforms: "scss,css,ios-swift"
-  output: generated
-
-# Execute runner when the tokens file is pushed to 'main' branch or on a 'pull_request' event
 on:
   pull_request:
   push:
     branches:
       - main
-    # Can't use the ${{env.tokens-file}} environment variable here, because they can only be used
-    # in a workflow step or an action.
-    # See: https://docs.github.com/en/enterprise-server@3.0/actions/learn-github-actions/environment-variables#about-environment-variables
-    # Another solution could be, to add a conditional on every job to check if the file has changed
-    paths:
-      - tokens.json
 
 jobs:
-  # Generate the assets
-  transform:
-    name: Transform
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v3
-
-      - name: Transform tokens
-        id: transform
-        uses: Flutter-Global/design-tokens@master
-        with:
-          input: ${{env.tokens-file}}
-          platforms: ${{env.platforms}}
-          output: ${{env.output}}
-
-  # Commit and push the generated assets to the branch
-  commit:
-    name: Commit
-    runs-on: ubuntu-latest
-    needs: transform
-    outputs:
-      commit-sha: ${{ steps.automatic-commit.outputs.commit_hash }}
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v3
-
-      - name: Download assets artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: assets
-          path: ${{env.output}}
-
-      - name: Display downloaded assets
-        run: ls -R
-        working-directory: ${{env.output}}
-
-      # Commits made by this Action do not trigger new Workflow runs, so the 'release' job can't be separated on
-      # a new workflow watching for pushes of '**.css/scss/swift' files
-      # https://github.com/stefanzweifel/git-auto-commit-action#commits-made-by-this-action-do-not-trigger-new-workflow-runs
-      - name: Automatic commit
-        id: automatic-commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "ci(github-actions-bot): add generated assets"
-
-  # Create a tag which includes the committed assets
   release:
     name: Release
-    runs-on: ubuntu-latest
-    needs: [transform, commit]
+    runs-on: self-hosted
     steps:
-      - name: Checkout branch
+      - name: Checkout
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          ref: ${{ needs.commit.outputs.commit-sha }}
-
-      # Check wether the event was a 'push' or a 'pull_request' to properly set as a RELEASE_BRANCHES or not,
-      # since we've checked out the last commit, which includes the generated assets
-      - name: Prepare RELEASE_BRANCHES
-        id: release_branches
-        run: |
-          BRANCHES=$([ "${{github.event_name}}" == push ] && echo "main,master,${{ env.GITHUB_SHA}},${{env.GITHUB_REF}}" || echo "main,master")
-          echo "::set-output name=branches::$BRANCHES"
-
-      - name: Bump version and push tag
-        uses: anothrNick/github-tag-action@1.36.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_BRANCHES: ${{ steps.release_branches.outputs.branches }}
+          node-version-file: '.nvmrc'
+      - uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm ci
+      - run: npm run release
+      # - name: Semantic Release
+      #   uses: cycjimmy/semantic-release-action@v3
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}    
