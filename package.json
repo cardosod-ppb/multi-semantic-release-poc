@@ -1,5 +1,5 @@
 {
-  "name": "@pp/abacus-design-tokens",
+  "name": "@pp/multi-semantic-release-poc",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",

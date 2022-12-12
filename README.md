@@ -1,4 +1,4 @@
-# abacus-design-tokens
+# multi-semantic-release-poc
 
 A Figma design tokens repository that generates assets for the Paddy Power brand.
 

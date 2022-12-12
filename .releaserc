@@ -1,5 +1,5 @@
 {
-    "repositoryUrl": "git@github.com:Flutter-Global/abacus-design-tokens.git",
+    "repositoryUrl": "git@github.com:cardosod-ppb/multi-semantic-release-poc.git",
     "ci": true,
     "release": {
         "branches": [
